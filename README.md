@@ -3,8 +3,6 @@
 链链前端 node API基础库，基于Egg.js的 RESTful API 模板，用于快速集成开发前后端分离的服务端。
 涵盖mysql、redis、mongodb、Mock数据服务&生成文档、服务器渲染（ejs）、curl、定时任务、RESTful接口开发、文件上传、单元测试、token验证、数据加密、日志定制
 
-created by gaochao.
-
 
 
 ### QuickStart
