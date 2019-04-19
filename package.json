@@ -1,0 +1,65 @@
+{
+  "name": "egg_go",
+  "version": "1.0.0",
+  "description": "Node.js RESTful API & DB demo Server for lianlian.based on egg.js!",
+  "private": true,
+  "dependencies": {
+    "await-stream-ready": "^1.0.1",
+    "egg": "^2.0.0",
+    "egg-bcrypt": "^1.0.0",
+    "egg-cors": "^2.0.0",
+    "egg-jwt": "^2.2.0",
+    "egg-mongoose": "^2.1.1",
+    "egg-mysql": "^3.0.0",
+    "egg-redis": "^2.3.1",
+    "egg-scripts": "^2.1.0",
+    "egg-validate": "^1.0.0",
+    "egg-view-assets": "^1.3.0",
+    "egg-view-ejs": "^2.0.0",
+    "image-downloader": "^3.3.0",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.20.1",
+    "stream-to-array": "^2.3.0",
+    "stream-wormhole": "^1.0.3"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "mocha": "^6.1.3",
+    "mockjs": "^1.0.1-beta3",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --env=prod",
+    "uat": "egg-scripts start --env=unittest",
+    "local": "egg-scripts start --env=local",
+    "stage": "egg-scripts start --env=stage",
+    "document": "apidoc -i app/controller/ -o apidoc/",
+    "stop": "egg-scripts stop",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "chao.gao@bkjk.com",
+  "license": "MIT"
+}
